@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe game</title>
+    <link rel="stylesheet" href="ttt.css">
+</head>
+<body>
+    <h1>Tic Tac Toe Game</h1>
+    <br><br>
+    <div class="main-body">
+        <div id="row1" class="rows">
+            <input class="b" type="text" id="b1" onclick="turnb1(); winLose()" readonly>
+            <input class="b" type="text" id="b2" onclick="turnb2(); winLose()" readonly>
+            <input class="b" type="text" id="b3" onclick="turnb3(); winLose()" readonly>
+        </div>
+        <div id="row2" class="rows">
+            <input class="b" type="text" id="b4" onclick="turnb4(); winLose()" readonly>
+            <input class="b" type="text" id="b5" onclick="turnb5(); winLose()" readonly>
+            <input class="b" type="text" id="b6" onclick="turnb6(); winLose()" readonly>
+        </div>
+        <div id="row3" class="rows">
+            <input class="b" type="text" id="b7" onclick="turnb7(); winLose()" readonly>
+            <input class="b" type="text" id="b8" onclick="turnb8(); winLose()" readonly>
+            <input class="b" type="text" id="b9" onclick="turnb9(); winLose()" readonly>
+        </div>
+    </div>
+    <br><br><br>
+    <button onclick="reseting()">PLAY AGAIN</button><br>
+    <p id="print-score">Results will be printed here</p>
+
+
+<script src="ttt.js"></script>
+</body>
+</html>
